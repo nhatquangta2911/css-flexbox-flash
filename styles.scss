@@ -1,0 +1,22 @@
+@import "variables";
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans");
+
+* {
+    font-family: "Fira Sans", sans-serif;
+    font-size: $normalText;
+    color: $basicTextColor;
+    margin: 0;
+}
+
+body {
+    background-color: $backgroundColor;
+}
+
+// central column in the page
+.wrapper {
+    width: 100%;
+    max-width: 960px;
+}
+
+
+
