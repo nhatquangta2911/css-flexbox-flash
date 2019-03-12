@@ -15,8 +15,82 @@ body {
 // central column in the page
 .wrapper {
     width: 100%;
-    max-width: 960px;
+    max-width: 1080px;
+    margin: 0 auto;
 }
 
+.flex-container {
+    display: flex;
+    background-color: #fff; 
+    flex-wrap: wrap;
+}
 
+.box {
+    height: 150px;
+    // min-width: 350px;
+    flex: 1 0 350px;
+}
 
+.one {
+    background-color: $topicGreen;
+    // flex-grow: 2;
+    // flex-shrink: 2;
+}
+
+.two {
+    background-color: $topicViolet;
+    // flex-grow: 1;
+    // flex-shrink: 1;
+}
+
+.three {
+    background-color: $topicLightBlue;
+    // flex-grow: 3;
+    // flex-shrink: 3;
+}
+
+// Menu Base Styles
+
+nav {
+    
+    background-color: $topicDarkBlue;
+    border-radius: 3px; 
+
+    ul {
+        list-style-type: none;
+          padding: 0;
+    }
+
+    // li {
+    //     color: $lightTextColor;
+    //     padding: 12px 15px;
+    // }
+
+    a {
+        text-decoration: none;
+        color: $topicLightGreen;
+        display: block; 
+        padding: 15px;
+        text-align: center;
+
+        &:hover {
+            background-color: $topicLightGreen;
+            color: $topicDarkBlue;
+            font-weight: bold;
+        }
+    }
+}
+
+// Menu Flex Styles
+
+@media screen and (min-width: 768px) {
+    nav {
+        ul {
+            display: flex;
+        }
+
+        li {
+            flex: 1 1 0;
+        }
+    }
+}
